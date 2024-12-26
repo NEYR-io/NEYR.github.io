@@ -38,6 +38,11 @@
     background-color: white;
     text-align: center;
     margin: 1% 0;
+    transition: 0.3s;
+}
+.games-container div:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
 }
 
 .games-container a {

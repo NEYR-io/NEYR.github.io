@@ -34,6 +34,7 @@ function setMines() {
 function startGame() {
     document.getElementById("mines-count").innerText = minesCount;
     document.getElementById("flag-button").addEventListener("click", setFlag);
+    document.getElementById("start-button").addEventListener("click", restartGame);
     setMines();
 
     // populate board
@@ -57,13 +58,18 @@ function startGame() {
 function setFlag() {
     if (flagEnabled) {
         flagEnabled = false;
-        document.getElementById("flag-button").style.backgroundColor = "lightgray";
+        document.getElementById("flag-button").style.backgroundColor = "rgb(224, 230, 232)";
     }
     else {
         flagEnabled = true;
-        document.getElementById("flag-button").style.backgroundColor = "darkgray";
+        document.getElementById("flag-button").style.backgroundColor = "rgb(118, 178, 198)";
     }
 }
+
+function restartGame() {
+    location.reload()
+}
+
 function clickTile() {
 
     if (gameOver || this.classList.contains("tile-clicked")) {
@@ -101,7 +107,7 @@ function revealMines() {
             let tile = board[r][c];
             if (minesLocation.includes(tile.id)) {
                 tile.innerText = "💣"
-                tile.style.backgroundColor = "red"
+                tile.style.backgroundColor = "rgb(254, 233, 222)"
             }
         }
     }
