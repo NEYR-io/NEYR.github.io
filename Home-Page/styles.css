@@ -3,7 +3,7 @@
     padding: 0;
 }
  body {
-    background-image: url("Images/background-image.jpg");
+    background-image: url("/Images/background-image.jpg");
  }
 
 .title {
@@ -58,11 +58,9 @@
 
 
 #minesweeper {
-    background-image: url(Images/minesweeper-image-cropped-4.jpeg);
-    opacity: 0.9;
+    background-image: url(/Images/minesweeper-image-cropped-4.jpeg);
 }
 
 #sudoku {
-    background-image: url(Images/sudoku-image-cropped-3.jpeg);
-    opacity: 0.9;
+    background-image: url(/Images/sudoku-image-cropped-3.jpeg);
 }
