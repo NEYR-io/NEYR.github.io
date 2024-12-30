@@ -33,12 +33,14 @@
 .games-container div {
     flex-basis: 30%;
     padding: 50px 0;
-    border: 1px solid black;
+    border: 3px solid black;
     border-radius: 15px;
-    background-color: white;
+    background-size: cover;
     text-align: center;
     margin: 1% 0;
     transition: 0.3s;
+    background-color: white;
+    min-width: 250px;
 }
 .games-container div:hover {
     transform: scale(1.03);
@@ -51,4 +53,16 @@
     font-family: "Silkscreen";
     font-size: 30px;
     font-weight: 200;
+}
+
+
+
+#minesweeper {
+    background-image: url(Images/minesweeper-image-cropped-4.jpeg);
+    opacity: 0.9;
+}
+
+#sudoku {
+    background-image: url(Images/sudoku-image-cropped-3.jpeg);
+    opacity: 0.9;
 }
