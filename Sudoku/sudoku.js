@@ -1,3 +1,4 @@
+
 var numSelected = null;
 var tileSelected = null;
 
@@ -13,7 +14,7 @@ var board = [
     "9-4-7---2",
     "67-83----",
     "81--45---"
-];
+]
 
 var solution = [
     "387491625",
@@ -25,19 +26,22 @@ var solution = [
     "934176852",
     "675832941",
     "812945763"
-];
+]
 
-window.onload = function () {
+window.onload = function() {
     setGame();
-};
+}
 
 function setGame() {
+    document.getElementById("restart").addEventListener("click", restart);
     // Digits 1-9
     for (let i = 1; i <= 9; i++) {
+        //<div id="1" class="number">1</div>
         let number = document.createElement("div");
-        number.id = i;
+        number.id = i
         number.innerText = i;
         number.addEventListener("click", selectNumber);
+        number.classList.add("number");
         document.getElementById("digits").appendChild(number);
     }
 
@@ -63,7 +67,7 @@ function setGame() {
     }
 }
 
-function selectNumber() {
+function selectNumber(){
     if (numSelected != null) {
         numSelected.classList.remove("number-selected");
     }
@@ -90,4 +94,8 @@ function selectTile() {
             document.getElementById("errors").innerText = errors;
         }
     }
+}
+
+function restart() {
+    location.reload()
 }

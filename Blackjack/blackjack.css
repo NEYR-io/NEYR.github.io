@@ -1,6 +1,19 @@
 body {
+    background-image: url(../Images/background-image.jpg);
+}
+
+.game {
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Megrim";
+    font-weight: 600;
+    font-size: 40px;
+    transition: 0.3s;
 }
 
 #dealer-cards img {
@@ -16,13 +29,13 @@ body {
 }
 
 #hit {
-    height: 100px;
-    width: 50px;
+    height: 50px;
+    width: 100px;
     font-size: 20px;
 }
 
 #stay {
-    height: 100px;
-    width: 50px;
+    height: 50px;
+    width: 100px;
     font-size: 20px;
 }

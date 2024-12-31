@@ -5,15 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sudoku</title>
     <link rel="stylesheet" href="sudoku.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
     <script src="sudoku.js"></script>
 </head>
 <body>
-    <h1>Sudoku</h1>
-    <hr>
-    <h2 id="errors">0</h2>
+    <div class="title">
+        <a href="/Home_Page/index.html">NEYR.io</a>
+        <div class="text">
+            <h2>Errors: <span id="errors">0</span></h2>
+        </div>
+    
+    </div>
     <!-- 9x9 board -->
      <div id="board"></div>
      <br>
      <div id="digits"></div>
+     <br>
+     <div class="text">
+        <button id="restart">Restart</button>
+    </div>
 </body>
 </html>

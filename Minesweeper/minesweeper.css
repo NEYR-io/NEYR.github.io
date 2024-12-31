@@ -10,7 +10,7 @@ body {
     font-family: "Megrim";
     font-weight: 600;
     font-size: 40px;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .title a:hover {

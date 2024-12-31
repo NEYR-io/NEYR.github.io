@@ -5,20 +5,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blackjack</title>
     <link rel="stylesheet" href="blackjack.css">
-    <script src="blackjack.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Megrim&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
+    <script src="blackjack.js" defer></script>
 </head>
 <body>
-    <h2>Dealer: <span id="dealer-sum"></span></h2>
-    <div id="dealer-cards">
-        <img id="hidden" src="cards/BACK.png">
+    <a href="/Home_Page/index.html">NEYR.io</a>
+    <div class="game">
+        <h2>Dealer: <span id="dealer-sum"></span></h2>
+        <div id="dealer-cards">
+            <img id="hidden" src="./cards/BACK.png">
+        </div>
+
+        <h2>You: <span id="your-sum"></span></h2>
+        <div id="your-cards"></div>
+
+        <br>
+        <button id="hit">Hit</button>
+        <button id="stay">Stay</button>
+        <p id="results"></p>
+        <br>
+        <button id="restart">Restart</button>
     </div>
-
-    <h2>You: <span id="your-sum"></span></h2>
-    <div id="your-cards"></div>
-
-    <br>
-    <button id="hit">Hit</button>
-    <button id="stay">Stay</button>
-    <p id="results"></p>
 </body>
 </html>
