@@ -56,7 +56,7 @@ window.onload = function() {
 
     //load images
     shipImg = new Image();
-    shipImg.src = "./space-invaders-img/alien.png";
+    shipImg.src = "./space-invaders-img/ship.png";
     shipImg.onload = function() {
         context.drawImage(shipImg, ship.x, ship.y, ship.width, ship.height);
     }
@@ -68,6 +68,14 @@ window.onload = function() {
     requestAnimationFrame(update);
     document.addEventListener("keydown", moveShip);
     document.addEventListener("keyup", shoot);
+
+    if (gameOver) {
+        restartGame()
+    }
+}
+
+function restartGame() {
+    location.reload()
 }
 
 function update() {
