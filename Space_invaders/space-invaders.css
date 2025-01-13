@@ -1,0 +1,19 @@
+body {
+    font-family:'Courier New', Courier, monospace;
+    background-image: url(../Images/background-image.jpg);
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: "Megrim";
+    font-weight: 600;
+    font-size: 40px;
+    transition: 0.3s;
+}
+.body {
+    text-align: center;
+}
+#board {
+    background-color: black;
+}
