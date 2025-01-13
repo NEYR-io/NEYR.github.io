@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background-image: url(../Images/background-image.jpg);
+}
+
+.title a {
+    text-decoration: none;
+    color: black;
+    font-family: "Megrim";
+    font-weight: 600;
+    font-size: 40px;
+    transition: 0.3s;
+}
+
+.title a:hover {
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+    border: 10px solid rgb(176, 191, 196);
+    background-color: rgb(224, 230, 232);
+    
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#board div {
+    width: 48px;
+    height: 48px;
+    border: 1px solid whitesmoke;
+
+     /*text*/
+     font-size: 30px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
+.tile-clicked {
+    background: rgb(176, 191, 196);
+}
+
+.x1 {
+    color: rgb(0, 0, 146);
+}
+
+.x2 {
+    color: rgb(24, 96, 0);
+}
+
+.x3 {
+    color: rgb(193, 0, 0);
+}
+
+.x4 {
+    color: rgb(49, 0, 84);
+}
+
+.x5 {
+    color: rgb(60, 32, 32);
+} 
+
+.x6 {
+    color: rgb(0, 120, 120);
+}
+
+.x7 {
+    color: black;
+}
+
+.x8 {
+    color: rgb(93, 93, 93);
+}
+
+.flag-button {
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    background-color: lightgrey;
+    border: none;
+    margin: 0 auto;
+}
